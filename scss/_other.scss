@@ -1,0 +1,93 @@
+//layout
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-hover:hover{
+    box-shadow: .5px .5px 3px;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+footer{
+    a:hover{
+        color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity))!important;
+        i{
+            border-radius: 50%;
+            background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+            color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity))!important;
+        }
+    }
+}
+//index
+.banner{
+    background-image: url(https://images.unsplash.com/photo-1601654253194-260e0b6984f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1699&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.confuse{
+    i{
+        transition: color ease .5s;
+    }  
+    .card:hover{
+        i{
+            color:rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+        }    
+    }
+}
+
+.planFee{
+    img{
+        transition: transform ease 1s;
+    }
+    .card:hover{
+        img{
+            transform: scale(1.2);
+        }
+        a{
+            background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity))!important;
+            border-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity))!important;
+        }
+    }
+}
+
+//purchase
+.choosePlanArea{
+    .btn-outline-success:hover,.btn-outline-success:focus {
+        color: #fff;
+        background-color: var(--bs-warning);
+        border-color: var(--bs-warning);
+        box-shadow: 0 .5rem .5rem rgba($black, .5);
+    }
+    .btn-check:checked + .btn-outline-success{
+        background-color: var(--bs-warning);
+        border-color: var(--bs-warning);
+        box-shadow: 0 .5rem .5rem rgba($black, .5);
+    }
+}
+
+.fillInInfo{
+    button:hover, button:focus,button:active:focus{
+        color: #fff;
+        background-color: var(--bs-warning);
+        border-color: var(--bs-warning);
+        -webkit-box-shadow: 0 0 0 0.25rem $yellow-200;
+        box-shadow: 0 0 0 0.25rem $yellow-200;
+    }
+    .form-control:focus,.form-select:focus {
+        border-color: $green-300;
+        -webkit-box-shadow: 0 0 0 0.25rem $green-200;
+        box-shadow: 0 0 0 0.25rem $green-200;
+    }
+    .form-check-input:checked,.form-check-input:focus {
+        border-color: $green-300;
+        -webkit-box-shadow: 0 0 0 0.25rem $green-200;
+        box-shadow: 0 0 0 0.25rem $green-200;
+    }
+    .form-check-input:checked{
+        background-color: $green;
+    }
+} 
